@@ -715,6 +715,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal{
     position: absolute;
+    padding: 72px 24px 24px 24px;
     top: 50%;
     left: 50%;
     width: 408px;
@@ -730,24 +731,38 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 .close-button{
     display: flex;
-    margin-left: auto;
-    border: 1px #8E8F99 solid;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
     background-color: #E7E9FC;
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    align-items: center;
-    justify-content: center;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   align-items: center;
+   justify-content: center;
+   cursor: pointer; 
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .close-button:hover{
-    background-color: #4D5AE5;
+     background-color: #404bbf;
+     border: none;
+}
+.close-button:focus{
+    background-color: #404bbf;
+    border: none;
 }
 
 .close-button:hover .close-icon{
-    fill: white;
+     fill: #ffffff
+   
+}      
+.close-button:focus .close-icon{
+    fill: #ffffff
 }
-
 .close-icon{
     transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -785,7 +800,8 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .label-form{
- 
+    display: block;
+    margin-bottom: 4px;
 font-weight: 400;
 font-size: 12px;
 line-height: 117%;
@@ -793,6 +809,11 @@ letter-spacing: 0.04em;
 color: #8E8F99;
 
 }
+
+.modal-field{
+    position: relative;
+}
+
 
 
 .modal-icon{
