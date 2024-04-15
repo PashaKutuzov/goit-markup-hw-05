@@ -239,7 +239,7 @@ background-color: #404BBF;
         color: #2E2F42;
 }
 
-.visual-hidden
+.visually-hidden
     {
             position: absolute;
             width: 1px;
@@ -869,6 +869,10 @@ color: white;
 }
 
 
+.modal-check{
+    margin-bottom: 24px;
+}
+
 .text-coment{
 width: 100%;
 border: 1px solid rgba(46, 47, 66, 0.4);
@@ -880,6 +884,7 @@ background-color: transparent;
 height: 120px;
 padding: 8px 16px;
 outline: transparent;
+font-size: 12px;
 resize: none;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -917,21 +922,24 @@ gap: 8px;
         width: 16px;
         height: 16px;
         border-radius: 2px;
-border: 1px solid #2E2F42;
-display: flex;
+        border: 1px solid rgba(46, 47, 66, 0.4); 
+display: inline-flex;
 fill: transparent;
 justify-content: center;
 align-items: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
        }    
        
 
 
 
        .chek-modal:checked + .check-text .check-box{
-        background-color: #4D5AE5;
+        background-color: #404bbf;
         border: none;
         fill: #F4F4FD;
         
        }
-
+       
      
