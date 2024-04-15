@@ -835,6 +835,10 @@ color: #8E8F99;
    
     margin-bottom: 4px;
 }
+.label-text{
+    margin-bottom: 16px;
+}
+
 .send-button{
     display: block;
     margin-left: auto;
@@ -891,6 +895,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: #8E8F99;
 display: flex;
 align-items: center;
+justify-content: center;
 gap: 8px;
        }
 
@@ -903,16 +908,19 @@ gap: 8px;
 
 
        .check-box{
-      display: flex;
-      align-items: center;
-      justify-content: center;
         width: 16px;
         height: 16px;
         border-radius: 2px;
 border: 1px solid #2E2F42;
+display: flex;
 fill: transparent;
+justify-content: center;
+align-items: center;
        }    
        
+
+
+
        .chek-modal:checked + .check-text .check-box{
         background-color: #4D5AE5;
         border: none;
