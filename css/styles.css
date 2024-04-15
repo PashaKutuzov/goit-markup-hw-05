@@ -832,7 +832,8 @@ color: #8E8F99;
 }
 
 .label-form{
-    margin-bottom: 16px
+   
+    margin-bottom: 4px;
 }
 .send-button{
     display: block;
