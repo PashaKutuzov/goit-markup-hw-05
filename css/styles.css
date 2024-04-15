@@ -694,6 +694,7 @@ position: fixed;
 top: 0;
 background-color: rgba(46, 47, 66, 0.4);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -714,8 +715,9 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .modal{
+    padding-top: 72px; padding-right: 24px; padding-bottom: 24px; padding-left: 24px;
     position: absolute;
-    padding: 72px 24px 24px 24px;
+    
     top: 50%;
     left: 50%;
     width: 408px;
@@ -745,6 +747,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
    justify-content: center;
    cursor: pointer; 
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 
 }
 .close-button:hover{
@@ -927,9 +930,7 @@ display: inline-flex;
 fill: transparent;
 justify-content: center;
 align-items: center;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
- transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
        }    
        
 
